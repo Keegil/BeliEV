@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dashboard_element_margin"
+        android:layout_marginRight="@dimen/dashboard_element_margin"
+        android:layout_marginTop="@dimen/dashboard_element_margin"
+        android:layout_weight="0.20"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:maxWidth="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/invisible_man"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dashboard_element_margin"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="@dimen/dashboard_font_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_title"
+                android:textSize="@dimen/dashboard_font_medium"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_level"
+                    android:textSize="@dimen/dashboard_font_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | "
+                    android:textSize="@dimen/dashboard_font_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_credits"
+                    android:textSize="@dimen/dashboard_font_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dashboard_element_margin"
+        android:layout_marginRight="@dimen/dashboard_element_margin"
+        android:layout_marginTop="@dimen/dashboard_element_margin"
+        android:layout_weight="0.4"
+        android:background="@color/warm_grey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.7"
+                android:src="@drawable/driving_graph" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="@string/drive_rating"
+                android:textSize="@dimen/dashboard_font_huge" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="@color/wine_red"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/tip1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dashboard_font_large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dashboard_element_margin"
+        android:layout_marginRight="@dimen/dashboard_element_margin"
+        android:layout_marginTop="@dimen/dashboard_element_margin"
+        android:layout_weight="0.25"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.08"
+            android:background="@drawable/back_environment" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_moneysaver"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.84"
+            android:background="@drawable/money_bin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/money_saved"
+                android:textSize="@dimen/dashboard_font_larger"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@color/black" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/saving_money_for"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.08"
+            android:background="@drawable/back_time" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dashboard_element_margin"
+        android:layout_marginLeft="@dimen/dashboard_element_margin"
+        android:layout_marginRight="@dimen/dashboard_element_margin"
+        android:layout_marginTop="@dimen/dashboard_element_margin"
+        android:layout_weight="0.15"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed1"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dashboard_font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed2"
+            android:textSize="@dimen/dashboard_font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed3"
+            android:textSize="@dimen/dashboard_font_smaller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed4"
+            android:textSize="@dimen/dashboard_font_smaller" />
+    </LinearLayout>
+
+</LinearLayout>
