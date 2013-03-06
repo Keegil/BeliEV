@@ -18,11 +18,11 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:maxWidth="150dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/invisible_man"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY" />
+            android:maxWidth="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/invisible_man" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -80,7 +80,7 @@
         android:layout_marginLeft="@dimen/dashboard_element_margin"
         android:layout_marginRight="@dimen/dashboard_element_margin"
         android:layout_marginTop="@dimen/dashboard_element_margin"
-        android:layout_weight="0.4"
+        android:layout_weight="0.35"
         android:background="@color/warm_grey"
         android:orientation="vertical" >
 
@@ -115,33 +115,33 @@
             android:padding="8dp"
             android:text="@string/tip1"
             android:textColor="@color/white"
-            android:textSize="@dimen/dashboard_font_large" />
-
+            android:textSize="@dimen/dashboard_font_medium" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/ll_saver"
+        android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="@dimen/dashboard_element_margin"
-        android:layout_marginRight="@dimen/dashboard_element_margin"
         android:layout_marginTop="@dimen/dashboard_element_margin"
-        android:layout_weight="0.25"
+        android:layout_weight="0.30"
+        android:gravity="center"
         android:orientation="horizontal" >
 
         <LinearLayout
+            android:id="@+id/ll_scroll_left"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="0.08"
-            android:background="@drawable/back_environment" >
-        </LinearLayout>
+            android:layout_weight="0.1"
+            android:background="@drawable/back_environment" />
 
         <LinearLayout
             android:id="@+id/ll_moneysaver"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="0.84"
-            android:background="@drawable/money_bin"
-            android:orientation="vertical" >
+            android:layout_weight="0.8"
+            android:background="@drawable/money"
+            android:orientation="vertical"
+            android:visibility="gone" >
 
             <TextView
                 android:layout_width="match_parent"
@@ -153,7 +153,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="150dp"
+                android:layout_width="200dp"
                 android:layout_height="20dp"
                 android:background="@color/black" >
             </LinearLayout>
@@ -163,53 +163,170 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:text="@string/saved_money"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
                 android:text="@string/saving_money_for"
-                android:textStyle="italic" />
+                android:textSize="@dimen/dashboard_font_large"
+                android:textStyle="italic|bold" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_timesaver"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="0.08"
-            android:background="@drawable/back_time" >
+            android:layout_weight="0.8"
+            android:background="@drawable/clockwork"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/time_saved"
+                android:textSize="@dimen/dashboard_font_larger"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@color/black" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/saved_time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:text="@string/saving_time_for"
+                android:textSize="@dimen/dashboard_font_large"
+                android:textStyle="italic|bold" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_environmentsaver"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/amazon"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/environment_saved"
+                android:textSize="@dimen/dashboard_font_larger"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:background="@color/black" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/environment_challenge"
+                android:textSize="@dimen/dashboard_font_large"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_scroll_right"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:background="@drawable/back_money" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/dashboard_element_margin"
         android:layout_marginLeft="@dimen/dashboard_element_margin"
         android:layout_marginRight="@dimen/dashboard_element_margin"
-        android:layout_marginTop="@dimen/dashboard_element_margin"
         android:layout_weight="0.15"
-        android:background="@color/white"
-        android:orientation="vertical" >
+        android:scrollbars="none"
+        android:id="@+id/sv_feed" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feed1"
-            android:textColor="@color/blue"
-            android:textSize="@dimen/dashboard_font_smaller" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dashboard_element_margin"
+            android:background="@color/white"
+            android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feed2"
-            android:textSize="@dimen/dashboard_font_smaller" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dashboard_font_small" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feed3"
-            android:textSize="@dimen/dashboard_font_smaller" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed2"
+                android:textSize="@dimen/dashboard_font_small" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/feed4"
-            android:textSize="@dimen/dashboard_font_smaller" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed3"
+                android:textSize="@dimen/dashboard_font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed4"
+                android:textSize="@dimen/dashboard_font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dashboard_font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed6"
+                android:textSize="@dimen/dashboard_font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feed7"
+                android:textSize="@dimen/dashboard_font_small" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

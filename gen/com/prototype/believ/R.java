@@ -11,14 +11,15 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f040008;
+        public static final int black=0x7f040009;
         public static final int blue=0x7f040002;
         public static final int green=0x7f040003;
-        public static final int orange=0x7f040007;
+        public static final int grey=0x7f040006;
+        public static final int orange=0x7f040008;
         public static final int red=0x7f040001;
         public static final int warm_grey=0x7f040005;
         public static final int white=0x7f040000;
-        public static final int wine_red=0x7f040006;
+        public static final int wine_red=0x7f040007;
         public static final int yellow=0x7f040004;
     }
     public static final class dimen {
@@ -40,26 +41,34 @@ public final class R {
         public static final int achievements=0x7f020000;
         public static final int amazon=0x7f020001;
         public static final int back_environment=0x7f020002;
-        public static final int back_time=0x7f020003;
-        public static final int clockwork=0x7f020004;
-        public static final int driving_graph=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int invisible_man=0x7f020007;
-        public static final int money_bin=0x7f020008;
+        public static final int back_money=0x7f020003;
+        public static final int back_time=0x7f020004;
+        public static final int clockwork=0x7f020005;
+        public static final int driving_graph=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int invisible_man=0x7f020008;
+        public static final int money=0x7f020009;
+        public static final int moneybin=0x7f02000a;
     }
     public static final class id {
         public static final int achievmentProgress=0x7f090001;
-        public static final int action_settings=0x7f090011;
-        public static final int layout_achievment=0x7f090008;
-        public static final int layout_description=0x7f09000a;
-        public static final int layout_hidden=0x7f09000c;
-        public static final int li_current=0x7f09000d;
-        public static final int li_high=0x7f09000f;
-        public static final int li_id=0x7f09000e;
-        public static final int li_low=0x7f090010;
-        public static final int li_measure=0x7f09000b;
-        public static final int li_type=0x7f090009;
-        public static final int ll_moneysaver=0x7f090007;
+        public static final int action_settings=0x7f090017;
+        public static final int layout_achievment=0x7f09000e;
+        public static final int layout_description=0x7f090010;
+        public static final int layout_hidden=0x7f090012;
+        public static final int li_current=0x7f090013;
+        public static final int li_high=0x7f090015;
+        public static final int li_id=0x7f090014;
+        public static final int li_low=0x7f090016;
+        public static final int li_measure=0x7f090011;
+        public static final int li_type=0x7f09000f;
+        public static final int ll_environmentsaver=0x7f09000b;
+        public static final int ll_moneysaver=0x7f090009;
+        public static final int ll_saver=0x7f090007;
+        public static final int ll_scroll_left=0x7f090008;
+        public static final int ll_scroll_right=0x7f09000c;
+        public static final int ll_timesaver=0x7f09000a;
+        public static final int sv_feed=0x7f09000d;
         public static final int text_achievement_credits=0x7f090005;
         public static final int text_achievement_current=0x7f090003;
         public static final int text_achievement_desc=0x7f090002;
@@ -80,12 +89,21 @@ public final class R {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int drive_rating=0x7f060006;
-        public static final int feed1=0x7f06000e;
-        public static final int feed2=0x7f06000f;
-        public static final int feed3=0x7f060010;
-        public static final int feed4=0x7f060011;
+        public static final int environment_challenge=0x7f060013;
+        public static final int environment_saved=0x7f060012;
+        public static final int feed1=0x7f060014;
+        public static final int feed2=0x7f060015;
+        public static final int feed3=0x7f060016;
+        public static final int feed4=0x7f060017;
+        public static final int feed5=0x7f060018;
+        public static final int feed6=0x7f060019;
+        public static final int feed7=0x7f06001a;
         public static final int money_saved=0x7f06000c;
-        public static final int saving_money_for=0x7f06000d;
+        public static final int saved_money=0x7f06000d;
+        public static final int saved_time=0x7f060010;
+        public static final int saving_money_for=0x7f06000e;
+        public static final int saving_time_for=0x7f060011;
+        public static final int time_saved=0x7f06000f;
         public static final int tip1=0x7f060007;
         public static final int tip2=0x7f060008;
         public static final int tip3=0x7f060009;

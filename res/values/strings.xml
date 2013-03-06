@@ -7,17 +7,26 @@
     <string name="user_title">the Sneaky Carpooler</string>
     <string name="user_level">level 7</string>
     <string name="user_credits">credits 9001</string>
-    <string name="drive_rating">3.9</string>
+    <string name="drive_rating">4.1</string>
     <string name="tip1">You are accelerating too fast. Ease up on the pedal to conserve battery.</string>
     <string name="tip2">You have less than 20 % electricity left, take the next left to find a charging station.</string>
     <string name="tip3">You are driving too fast. Slow down to conserve battery.</string>
     <string name="tip4">You are driving in an area with a lot of traffic. Watch out!</string>
     <string name="tip5">You are now entering Chelyabinsk. Watch out for meteoroids.</string>
     <string name="money_saved">+ 2 340 NOK</string>
-    <string name="saving_money_for">2 340 / 3 990 NOK for an iPad 4</string>
+    <string name="saved_money">2 340 / 3 990 NOK</string>
+    <string name="saving_money_for">for an iPad 4</string>
+    <string name="time_saved">+ 12 HOURS</string>
+    <string name="saved_time">12 / 48 HOURS</string>
+    <string name="saving_time_for">for a weekend at the cabin</string>
+    <string name="environment_saved">+ 159 TREES</string>
+    <string name="environment_challenge">31 more TREES and you win</string>
     <string name="feed1">Invisible Man got 300 § for saving 45 min in the bus lane.</string>
-    <string name="feed2">Captain Obvious got 100 § for saving 27 NOK in tolls.</string>
+    <string name="feed2">Captain Obvious got 270 § for saving 27 NOK in tolls.</string>
     <string name="feed3">Skeletor got 500 § for saving a polar bear.</string>
     <string name="feed4">Wonder Woman beat Fisto in their "Save Oslo"-challenge.</string>
+    <string name="feed5">Invisible Man got 1000 § for driving through Chelyabinsk unharmed.</string>
+    <string name="feed6">Ram-Man got the achievement "Master of the Couch".</string>
+    <string name="feed7">Moss Man and Trap-Jaw both got 200 § for saving 20 NOK in tolls.</string>
 
 </resources>
