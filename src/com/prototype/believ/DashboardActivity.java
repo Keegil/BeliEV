@@ -3,6 +3,7 @@ package com.prototype.believ;
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.view.View.OnDragListener;
 import android.view.View.OnLongClickListener;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -30,6 +32,7 @@ public class DashboardActivity extends Activity implements OnClickListener,
 	LinearLayout llScrollLeft;
 	LinearLayout llScrollRight;
 	ScrollView svFeed;
+	ImageView ivGraph;
 	Drawable llSaverBackground;
 	TextView tvTip;
 	Display display;
@@ -60,8 +63,9 @@ public class DashboardActivity extends Activity implements OnClickListener,
 		llEnvironmentSaver = (LinearLayout) findViewById(R.id.ll_environmentsaver);
 		llScrollLeft = (LinearLayout) findViewById(R.id.ll_scroll_left);
 		llScrollRight = (LinearLayout) findViewById(R.id.ll_scroll_right);
-		
+
 		svFeed = (ScrollView) findViewById(R.id.sv_feed);
+		ivGraph = (ImageView) findViewById(R.id.iv_graph);
 
 		// set background alpha on all saver panes
 		llSaverBackground = llMoneySaver.getBackground();
@@ -83,6 +87,7 @@ public class DashboardActivity extends Activity implements OnClickListener,
 		llScrollRight.setOnClickListener(this);
 		llSaver.setOnDragListener(this);
 		svFeed.setOnLongClickListener(this);
+		ivGraph.setOnClickListener(this);
 	}
 
 	@Override
@@ -146,10 +151,10 @@ public class DashboardActivity extends Activity implements OnClickListener,
 				llScrollRight.setBackgroundResource(R.drawable.back_money);
 			}
 			break;
-
+		case R.id.iv_graph:
+			Intent intent = new Intent(this, DriveActivity.class);
+			startActivity(intent);
 		}
-		// Intent intent = new Intent(this, MainActivity.class);
-		// startActivity(intent);
 	}
 
 	@Override

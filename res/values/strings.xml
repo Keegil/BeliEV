@@ -28,5 +28,7 @@
     <string name="feed5">Invisible Man got 1000 § for driving through Chelyabinsk unharmed.</string>
     <string name="feed6">Ram-Man got the achievement "Master of the Couch".</string>
     <string name="feed7">Moss Man and Trap-Jaw both got 200 § for saving 20 NOK in tolls.</string>
+    <string name="title_activity_drive">DriveActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

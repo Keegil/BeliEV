@@ -30,6 +30,10 @@
             android:name="com.prototype.believ.AchievementActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.prototype.believ.DriveActivity"
+            android:label="@string/title_activity_drive" >
+        </activity>
     </application>
 
 </manifest>
